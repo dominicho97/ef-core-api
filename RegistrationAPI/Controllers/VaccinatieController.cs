@@ -27,7 +27,7 @@ namespace RegistrationAPI.Controllers
 
         [HttpGet]
         [Route("/locations")]
-        public List<VaccinationLocation> GetLocations(){
+        public List<Author> GetLocations(){
             return null;
         }
 
