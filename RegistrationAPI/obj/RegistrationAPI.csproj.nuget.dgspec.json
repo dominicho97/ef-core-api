@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\backend-labo04-registration-ef-start\\RegistrationAPI\\RegistrationAPI.csproj": {}
+    "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\RegistrationAPI.csproj": {}
   },
   "projects": {
-    "C:\\src\\backend-labo04-registration-ef-start\\RegistrationAPI\\RegistrationAPI.csproj": {
+    "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\RegistrationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\backend-labo04-registration-ef-start\\RegistrationAPI\\RegistrationAPI.csproj",
+        "projectUniqueName": "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\RegistrationAPI.csproj",
         "projectName": "RegistrationAPI",
-        "projectPath": "C:\\src\\backend-labo04-registration-ef-start\\RegistrationAPI\\RegistrationAPI.csproj",
-        "packagesPath": "C:\\Users\\diete\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\backend-labo04-registration-ef-start\\RegistrationAPI\\obj\\",
+        "projectPath": "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\RegistrationAPI.csproj",
+        "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\diete\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Local Nuget": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,10 +73,29 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
