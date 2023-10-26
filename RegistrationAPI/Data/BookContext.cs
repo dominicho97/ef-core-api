@@ -48,5 +48,27 @@ namespace RegistrationAPI.Data
         {
             options.UseSqlServer(_connectionStrings.SQL);
         }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Author>().HasData(new Author(){AuthorId = Guid.NewGuid(), Name = "Bill Gates", Age = 65, Country = "Unites States"});
+            modelBuilder.Entity<Author>().HasData(new Author() { AuthorId = Guid.NewGuid(), Name = "Matthew Walker", Age = 48, Country = "United Kingdom" });
+            modelBuilder.Entity<Author>().HasData(new Author() { AuthorId = Guid.NewGuid(), Name = "Hope Jahren", Age = 51, Country = "Unites States" });
+            modelBuilder.Entity<Author>().HasData(new Author() { AuthorId = Guid.NewGuid(), Name = "Matt Haig", Age = 45, Country = "United Kingdom" });
+            modelBuilder.Entity<Author>().HasData(new Author() { AuthorId = Guid.NewGuid(), Name = "Lucy Foley", Age = 35, Country = "United Kingdom" });
+
+
+
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Fiction" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Mystery & Thriller" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Nonfiction" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Science & Technology" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Historical Fiction" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Science & Technology" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Fantasy" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Romance" });
+            modelBuilder.Entity<BookGenre>().HasData(new BookGenre() { BookGenreId = Guid.NewGuid(), Genre = "Horror" });
+        }
     }
 }
