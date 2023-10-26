@@ -1,8 +1,22 @@
-using BookAPI.Models;
+using RegistrationAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using RegistrationAPI.Configuration;
-using RegistrationAPI.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using BookAPI.Models;
 
 namespace RegistrationAPI.Data
 {
@@ -15,8 +29,9 @@ namespace RegistrationAPI.Data
 
         private ConnectionStrings _connectionStrings;
 
-        public BookContext(DbContextOptions<BookContext> options, IOptions<ConnectionStrings> connectionStrings) {
-            _connectionStrings = connectionStrings.Value;
+        public BookContext(DbContextOptions<BookContext> options, IOptions<ConnectionStrings> connectionstrings) 
+        {
+            _connectionStrings = connectionstrings.Value;
         }
 
 

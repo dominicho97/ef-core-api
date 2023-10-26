@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VYmS6UozQEz7xqGsZPsQWoJVrXxYWB0j2CPgJANPuGtDXiZ/J9vwq5kASqD3LNBlEVCwIxvuB1MqhdbQEnL+ZA==",
+  "dgSpecHash": "fWkamTx7FVeZegGfUkht7GvBgEOSy4u5quHjOBJSiQhwxyNFapt4uOo8KbK7qjlgI3aKL4fWthKlynGcJdV1CA==",
   "success": true,
   "projectFilePath": "C:\\Users\\domin\\OneDrive\\Bureaublad\\thuis\\eigen_projecten\\ef-core-api\\RegistrationAPI\\RegistrationAPI.csproj",
   "expectedPackageFiles": [
@@ -103,11 +103,7 @@
     "C:\\Users\\domin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\domin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
