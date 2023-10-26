@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using System.IO;
 using System.Globalization;
 using Microsoft.Extensions.Options;
+using BookAPI.Models;
 
 
 namespace RegistrationAPI.Controllers
@@ -16,10 +17,10 @@ namespace RegistrationAPI.Controllers
  
 
     [ApiController] 
-    public class VaccinatieController : ControllerBase
+    public class BookController : ControllerBase
     {
 
-        public VaccinatieController()
+        public BookController()
         {
  
         }
@@ -33,19 +34,19 @@ namespace RegistrationAPI.Controllers
 
         [HttpGet]
         [Route("/vaccins")]
-        public List<VaccinType> GetVaccins(){
+        public List<Author> GetAuthors(){
             return null;
         }
 
         [HttpGet]
         [Route("/registrations")]
-        public ActionResult<List<VaccinationRegistration>> GetRegistrations(string date = ""){
+        public ActionResult<List<Book>> GetBooks(string date = ""){
             return Ok();
         }
 
         [HttpPost]
         [Route("/registration")]
-        public ActionResult<VaccinationRegistration> AddRegistration(VaccinationRegistration registration){
+        public ActionResult<Book> AddBook(Book book){
             
             return null;
         }
