@@ -10,6 +10,8 @@ using System.IO;
 using System.Globalization;
 using Microsoft.Extensions.Options;
 using BookAPI.Models;
+using RegistrationAPI.Data;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace RegistrationAPI.Controllers
@@ -20,23 +22,21 @@ namespace RegistrationAPI.Controllers
     public class BookController : ControllerBase
     {
 
-        public BookController()
+
+        private BookContext _context;
+        public BookController( BookContext context)
         {
- 
+            _context = context;
         }
 
 
         [HttpGet]
-        [Route("/locations")]
-        public List<Author> GetLocations(){
-            return null;
+        [Route("/authors")]
+        public async Task<List<Author>> GetAuthors(){
+            return await _context.Authors.ToListAsync();
         }
 
-        [HttpGet]
-        [Route("/vaccins")]
-        public List<Author> GetAuthors(){
-            return null;
-        }
+    
 
         [HttpGet]
         [Route("/registrations")]
