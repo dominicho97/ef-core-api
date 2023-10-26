@@ -29,13 +29,22 @@ namespace RegistrationAPI.Data
 
         private ConnectionStrings _connectionStrings;
 
-        public BookContext(DbContextOptions<BookContext> options, IOptions<ConnectionStrings> connectionstrings) 
-        {
+        // public BookContext(DbContextOptions<BookContext> options, IOptions<ConnectionStrings> connectionstrings) 
+        // {
+        //     _connectionStrings = connectionstrings.Value;
+        // }
+       
+       public BookContext (DbContextOptions<BookContext> options, IOptions<ConnectionStrings> connectionstrings)
+       {
             _connectionStrings = connectionstrings.Value;
-        }
+       }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        // protected override void OnConfiguring(DbContextOptionsBuilder options)
+        // {
+        //     options.UseSqlServer(_connectionStrings.SQL);
+        // }
+                protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(_connectionStrings.SQL);
         }
